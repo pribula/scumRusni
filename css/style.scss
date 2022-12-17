@@ -1,0 +1,211 @@
+main{
+    font-size: 90%;
+}
+
+.wraper{
+    margin: 0 auto;
+    display: flex ;
+    min-height: 100%;
+    max-width: 1440px;
+    flex-direction: column;
+    gap: 35px;
+
+    header{
+        margin-left: 10%;
+    }
+    
+}
+.inputSmall {
+    display: none;
+}
+
+
+
+.SberHeader{
+    width: 300px;
+    height: 100px;
+}
+
+header{
+    margin: 0px auto;
+}
+
+.donationCart{
+    
+    border: 1px solid rgba(224, 219, 219, 0.5);
+    border-radius: 3px;
+    box-shadow: 20px 20px 60px #d9d9d9,
+            -20px -20px 60px #ffffff;
+    height: 53%;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.mainWraper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 30px;
+    margin: 0 auto;
+    
+
+
+    .leftColum{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        flex-wrap: nowrap;
+                
+        p{
+            height: 25%;
+            padding-left: 43%; 
+        }
+    }
+    .rightColum{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        div{
+            height: 25%;
+        }
+
+        input{
+            width: 190px;
+            position: relative;
+
+            .i1{
+                position: relative;
+            }
+
+            
+
+            &:hover {
+                border: 1px solid rgb(113, 93, 230);
+            }
+        }
+
+        
+        .imputShort{
+            max-width: 20%;
+        }
+
+        .cardI{
+            position: relative;
+            width: 20px;
+            left: 169px;
+            top:-19px;
+            display:flex;
+
+        }
+    }
+    .mainFooter{
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+        button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: darkgrey;
+            border-radius: 8px;
+            width: 80px;
+            height: 40px;
+            
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+
+        
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 120px;
+    margin-top: -40px;
+
+    .imgFooter {
+        width: 80px;
+        
+    }
+}
+
+@media (max-width:663px) {
+    .mainWraper .leftColum p {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .mainWraper .leftColum p {
+        padding-left: 5px;
+        width: 152px;
+    }
+
+    .mainWraper .leftColum {
+        width: 156px;
+    }
+}
+
+@media (max-width:452px) {
+    .mainWraper .leftColum {
+            width: 113px;
+        }
+
+    .mainWraper .leftColum p {
+        width: 106px;
+    }
+
+    .CVC {
+        padding-top: 19px;
+    }
+    
+    .FullNametext {
+        padding-top: 9px;
+    }
+    .donationCart{
+        width: 90%;
+    }
+    footer{
+        padding-right: 25px;
+    }
+}
+
+@media (max-width:357px) {
+    .mainWraper .rightColum input {
+        width: 140px;
+    }
+
+    .mainWraper .rightColum .cardI {
+        left: 133px;
+    }
+    .donationCart {
+        width: 99%;
+    }
+    .SberHeader {
+        width: 246px;
+    }
+    .inputSmall{
+        display: block;
+    }
+    .FullNametext{
+        display: none;
+    
+    }
+    
+}
+
+
+
+
+.mainWraper .mainFooter {
+    .active {
+        background-color: #10D164;
+    }
+}
