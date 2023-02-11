@@ -64,7 +64,7 @@ header {
 .mainWraper .rightColum input {
   width: 190px;
   position: relative;
-  border: 1px solid rgb(0 0 0);
+  border: 1px solid white;
 }
 .mainWraper .rightColum input .i1 {
   position: relative;
